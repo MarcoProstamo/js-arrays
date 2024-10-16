@@ -13,6 +13,14 @@ for (let i = teachers.length - 1; i >= 0; i--)
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
-const longNames = null;
+
+// # Using Integreted Array Metod
+// const longNames = [];
+// teachers.forEach((item) => (item.length >= 5 ? longNames.push(item) : null));
+
+// # Using for Loop
+const longNames = [];
+for (let i = 0; i < teachers.length; i++)
+  teachers[i].length >= 5 ? longNames.push(teachers[i]) : null;
 
 // 3. Rimuovi 'Ed' dall'array teachers

@@ -24,3 +24,10 @@ for (let i = 0; i < teachers.length; i++)
   teachers[i].length >= 5 ? longNames.push(teachers[i]) : null;
 
 // 3. Rimuovi 'Ed' dall'array teachers
+
+// # Using Integreted Array Metod
+// teachers.forEach((item, i) => (item === "Ed" ? teachers.splice(i, 1) : null));
+
+// # Using for Loop
+for (let i = 0; i < teachers.length; i++)
+  teachers[i] === "Ed" ? teachers.splice(i, 1) : null;
